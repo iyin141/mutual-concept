@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: #000000;
+    padding-top: 2%;
+    padding-left: 5%; 
+    color: white;
+}
+.top{
+    display: flex;
+    min-height: fit-content;
+}
+.top .links{
+    display: flex;
+    padding: 5px;
+    margin-left: 60%; 
+    min-height: fit-content;
+    justify-content: space-between;
+    width: 80%;
+}
+.top .links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; 
+}
+.mutual{
+    display: flex;
+}
+.mutual .text{
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    width: 33.3%;
+    display: grid;
+    align-items: center;
+    grid-gap: 2px;
+    max-height: 85vh;
+}
+.mutual .text h2{
+    font-size: 1.5rem;
+}
+.mutual .text h1{
+    font-size: 5rem;
+}
+.mutual .text p{
+    font-size: 1.375rem;
+}
+.mutual .text a{
+    text-decoration: none;
+    font-size: 1.375rem;
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #FF4BB5;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+.mutual .text .free-trial{
+    display: flex;
+}
+.mutual .text .free-trial h3{
+    font-size: 1.125rem;
+    margin-left: 15px;
+}
+@media only screen and (max-width: 600px){
+    
+    .top{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .top .links{
+        margin-left: 0%;
+        justify-content: center;
+        justify-content: space-between;
+        width: 93%;
+    }
+    .top .links a{
+        text-align: center;
+    }
+    .top img{
+        margin-left: 27%;
+    }
+    .mutual{
+        display: block;
+        
+    }
+    .hero{
+        justify-content: center; /* Horizontally center the content */
+        align-items: center;
+    }
+    .hero img{
+        display: none;
+    }
+    .mutual .text{
+        width: 100%;
+        min-height: 80vh;
+    }
+    .mutual .text h1{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (min-width:601px){
+    .top .links{
+        margin-left: 5%;
+        width: 60%;
+    }
+    .mutual{
+        display: block;
+        
+    }
+    .hero{
+        justify-content: center; /* Horizontally center the content */
+        align-items: center;
+    }
+    .hero img{
+        width: 100%;
+        display: none;
+    }
+    .mutual .text{
+        width: 100%;
+        min-height: 90vh;
+    }
+}
+@media only screen and (min-width:768px) {
+    .top .links{
+        margin-left: 13%;
+        width: 60%;
+    }
+    .mutual{
+        display: flex;
+        
+    }
+    .hero{
+        justify-content: center; /* Horizontally center the content */
+        align-items: center;
+    }
+    .hero img{
+        width: 100%;
+        height: 70vh;
+        display: block;
+    }
+    .mutual .text{
+        width: 70%;
+        min-height: 100vh;
+    }
+}
+@media only screen and ( min-width:1200px){
+    .top .links{
+        width: 30%;
+        margin-left: 55%;
+    }
+    .mutual{
+        display: flex;
+    }
+    .mutual .text{
+        width: 40%;
+
+    }
+    .hero img{
+        width: 100%;
+        height: 100vh;
+    }
+}
